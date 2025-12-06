@@ -4,8 +4,8 @@ services:
     container_name: stirling-ts
     hostname: pdf
     environment:
-      - TS_AUTHKEY=tskey-client-kcRHZB3GxG11CNTRL-example?ephemeral=false
-      - "TS_EXTRA_ARGS=--advertise-tags=tag:container --reset"
+      - TS_AUTHKEY=123
+      #- "TS_EXTRA_ARGS=--advertise-tags=tag:container --reset"
       #- TS_SERVE_CONFIG=/config/stirling.json
       - TS_STATE_DIR=/var/lib/tailscale
       - TS_USERSPACE=false
