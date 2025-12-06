@@ -1,3 +1,4 @@
+name: pdf
 services:
   stirling-ts:
     image: tailscale/tailscale:latest
