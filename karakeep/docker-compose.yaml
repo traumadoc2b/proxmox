@@ -3,7 +3,7 @@ services:
     image: tailscale/tailscale:latest
     hostname: karakeep
     environment:
-      - TS_AUTHKEY=tskey-auth-123
+      - TS_AUTHKEY=123
       - TS_STATE_DIR=/var/lib/tailscale
       - TS_USERSPACE=true
     volumes:
@@ -45,6 +45,6 @@ services:
     restart: unless-stopped
     environment:
       - MEILI_NO_ANALYTICS=true
-      - MEILI_MASTER_KEY=123
+      - MEILI_MASTER_KEY=kd
     volumes:
       - ${PWD}/karakeep/meilisearch:/meili_data
