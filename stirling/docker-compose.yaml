@@ -4,7 +4,7 @@ services:
     container_name: ts-authkey-test
     hostname: banana
     environment:
-      - TS_AUTHKEY=tskey-auth-kMhCqN1cwo11CNTRL-cfaTEGHEEbT72mfUgV9aaTSQcNtueyXy
+      - TS_AUTHKEY=123
       #- TS_EXTRA_ARGS=--advertise-tags=tag:container
       - TS_STATE_DIR=/var/lib/tailscale
       - TS_USERSPACE=false 
@@ -25,7 +25,7 @@ services:
     container_name: stirling-ts
     hostname: pdf
     environment:
-      - TS_AUTHKEY=tskey-auth-kukDxgmGcw11CNTRL-XJTqonJ3Rh5eA6jjLam5h51DzJm2G3fD
+      - TS_AUTHKEY=123
       #- "TS_EXTRA_ARGS=--advertise-tags=tag:container --reset"  I think this is just for OAuth 
       - TS_SERVE_CONFIG=/config/stirling.json
       - TS_STATE_DIR=/var/lib/tailscale
